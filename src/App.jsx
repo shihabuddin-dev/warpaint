@@ -12,7 +12,7 @@ function App() {
   const productsPromise = fetchProducts()
   return (
     <>
-      <Suspense fallback={<h3>Products Are Loading.....</h3>}>
+      <Suspense fallback={<h3 className='text-center'>Products Are Loading.....</h3>}>
         <Products productsPromise={productsPromise}>
         </Products>
       </Suspense>
